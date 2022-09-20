@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Racing F1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!--Header-->
+    <div class="p-2 btn-danger text-white text-center">
+       <h1>Tienda Virtual Racing F1</h1>
+       <p>~ La tienda de los poleman ~</p>
+    </div> 
+    <!--Barra de Navegación-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+     <div class="container-fluid">
+      <a class="navbar-brand">
+          <img src="img/f11.jpg" alt="f1" width="50px" class="rounded">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+             data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-greey" href="#">Pilotos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-greey" href="#">Playeras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-greey" href="#">Gorras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="registrarse.html">Registrarse</a>
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="categorias.html">Categorías</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="acercade.html">Acerca De</a>
+  </li> 
+  <li class="nav-item">
+    <a class="nav-link text-muted" href="nosotros.html">Menus</a>
+  </li>
+          </ul>
+      </div>
+     </div>
+    </nav>
+    <!--Un carrusel de imágenes en tamaño de 30% en la visualización-->
+    <div class="container-fluid p-3 my-3 text-black">
+     <div class="row">
+       <div class="col-lg-12">
+         <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/mer2.jpg" alt="Playera Mercedes" class="mx-auto d-block"
+                   style="width:30%" data-bs-toggle="modal" data-bs-target="#mercedes">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/redP1.jpg" alt="Gorra  Red Bull Perez 11" class="mx-auto d-block"
+                    style="width:30%" data-bs-toggle="modal" data-bs-target="#perez1">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/fe1.jpg" alt="ferrari" class="mx-auto d-block"
+                    style="width:30%" data-bs-toggle="modal" data-bs-target="#ferrari">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/red2.jpg" alt="Playera Red Bull" class="mx-auto d-block"
+                    style="width:30%" data-bs-toggle="modal" data-bs-target="#redBull">
+                </div>         
+  <!-- Controles/iconos izquierdo y derecho -->
+  <button class="carousel-control-prev bg-black" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon "></span>
+  </button>
+  <button class="carousel-control-next bg-black" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+              </div>
+          </div>
+       </div>
+     </div>
+    </div>
+    <!--Tabla de descripciones de productos-->
+    <div class="container-fluid p-3 my-3 text-black">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="container mt-3">
+                <h2>Tipos de Productos</h2>
+                <p>Escuderia(s):</p>            
+                <table class="table table-dark table-striped">
+                  <thead>
+                    <tr>
+                      <th>Tipo</th>
+                      <th>Escuderia</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Gorra</td>
+                      <td> Red bull </td>
+                      <td>Ch / M / G</td>
+                    </tr>
+                    <tr>
+                      <td>Playera</td>
+                      <td>Mercedes</td>
+                      <td>Ch / M / G</td>
+                    </tr>
+                    <tr>
+                      <td>Pilotos</td>
+                      <td>Max Verstappen</td>
+                      <td>Ch / M / G</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+          </div>
+        </div>
+    </div>
+    <!-- Ventana Modal de Mercedes-->
+    <div class="modal fade" id="mercedes">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Playera Mercedes F1 Negra 2020</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img src="img/mer2.jpg" alt="Mercedes playera negra" class="mx-auto d-block" style="width:100%">  
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Ventana Modal de gorra perez-->
+    <div class="modal fade" id="perez1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title"> Gorra  Red Bull Perez 2020</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img src="img/redP1.jpg" alt="Gorra  Red Bull Perez 11 2020" class="mx-auto d-block" style="width:100%">  
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Ventana Modal de ferrari-->
+    <div class="modal fade" id="ferrari">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Player Ferrari F1 2020</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img src="img/fe1.jpg" alt="Ferrari" class="mx-auto d-block" style="width:100%">   
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Ventana Modal de red bull-->
+    <div class="modal fade" id="redBull">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Playera Red Bull Racing F1  2020</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <img src="img/red2.jpg" alt="Red Bull" class="mx-auto d-block" style="width:100%">  
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--Agregamos un footer-->
+    <div class="container-fluid p-5 my-5 bg-dark text-warning text-center">
+      <hr>
+      <p>Tienda Virtual Racing F1 @MR. Desarrollo por NHM</p>
+      <hr>
+    </div>
+    
+    <section class="paginacion">
+      <ul>
+        <li><a href="index.html" class="active">1</a></li>
+        <li><a href="acercade.html">2</a></li>
+        <li><a href="categorias.html">3</a></li>
+        <li><a href="nosotros.html">4</a></li>
+        <li><a href="registrarse.html">5</a></li>
+      </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <div class="p-3 bg-danger text-white text-center">
+        <h1>Tienda Virtual Racing F1</h1>
+        <p>~ La tienda de los poleman ~</p> 
+      </div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+        <img src="img/f11.jpg" alt="" width="50px" class="rounded"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Gorras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Playeras</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pilotos</a>
+        </li>  
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="registrarse.html">Registrarse</a>
+        </li>  
+        <li class="nav-item">
+            <a class="nav-link" href="categorias.html">Categorías</a>
+    </li> 
+    <li class="nav-item">
+      <a class="nav-link" href="acercade.html">Acerca De</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link text-muted" href="nosotros.html">Menus</a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Efecto acordión-->
+<div class="container mt-3">
+    <h2>Categorías de nuestros productos</h2>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+           Gorras
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="container mt-3">
+                <h2>Nuestras Gorras</h2>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Escuderia</th>
+                        <th>Foto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Red Bull</td>
+                        <td><img src="img/redP1.jpg" alt="gorra Red Bull" class="mx-auto d-block" style="width:100%" >
+                          <div class="p-3 mb-2 bg-danger text-white"> Precio: $999</div>
+                          <tr>
+
+                            <td></td><td></td><td></td> </tr>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Ferrari</td>
+                        <td><img src="img/ferrarigorra.jpg" alt="gorra Ferrari" class="mx-auto d-block" style="width:100%">
+                          <div class="p-3 mb-2 bg-danger text-white"> Precio: $999</div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+          Playeras
+        </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+            <div class="container mt-3">
+                <h2>Nuestras Playeras</h2>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Marca</th>
+                        <th>Foto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Ayrton Senna</td>
+                        <td><img src="img/ai1.jpg" alt="playera de Ayrton Senna" class="mx-auto d-block" style="width:100%">
+                          <div class="p-3 mb-2 bg-danger text-white"> Precio: $999</div></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Mercedes Benz F1</td>
+                        <td><img src="img/mer2.jpg" alt="playera de  Mercedes Benz F1 " class="mx-auto d-block" style="width:100%">
+                          <div class="p-3 mb-2 bg-danger text-white"> Precio: $999</div> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            Pilotos
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+            <div class="container mt-3">
+                <h2>Nuestros Articulos de pilotos</h2>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Marca</th>
+                        <th>Foto</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Michael Schumacher</td>
+                        <td><img src="img/mi1.jpg" alt="Gorra de Michael Schumacher" class="mx-auto d-block" style="width:100%">
+                          <div class="p-3 mb-2 bg-danger text-white"> Precio: $999</div></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Max Verstappen</td>
+                        <td><img src="img/max1.jpg" alt="playera de Max Verstappen" class="mx-auto d-block" style="width:100%">
+                          <div class="p-3 mb-2 bg-danger text-white"> Precio: $999</div> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid p-5 my-5 bg-dark text-warning text-center" fixed-top>
+    <hr>
+    <p>Tienda Virtual Racing F1 @MR. Desarrollo por NHM</p>
+    <hr>
+  </div>
+  </div>
+  
+  <section class="paginacion">
+    <ul>
+      <li><a href="index.html" class="active">1</a></li>
+      <li><a href="acercade.html">2</a></li>
+      <li><a href="categorias.html">3</a></li>
+      <li><a href="nosotros.html">4</a></li>
+      <li><a href="registrarse.html">5</a></li>
+    </ul>
+    
+  </section>
+</body>
+</html>
+
+
